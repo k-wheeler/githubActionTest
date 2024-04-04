@@ -16,6 +16,8 @@ jobs:
           pip install pyyaml
       - name: Run Feed Generator
         run: python feed.py
-
-        
+      - name: Push Repo
+        run:
+          git config user.name k-wheeler
+          git config user.email wheelerk@mit.edu
         
